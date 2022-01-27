@@ -39,7 +39,6 @@ const MORSE_TABLE = {
 
 function decode(expr) {
   let arraySymbols = [];
-  let symbolStringArray = '';
   for (let i = 0; i < expr.length; i = i + 10) {
     let symbolBinary = expr.substring(i, i + 10);
     if (symbolBinary.includes('*')) {
